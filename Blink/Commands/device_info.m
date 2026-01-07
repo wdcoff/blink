@@ -58,7 +58,7 @@ NSString *__screens(void) {
   return [result componentsJoinedByString:@"\n---------\n"];
 }
 
-__attribute__ ((visibility("default")))
+__attribute__ ((visibility("default"), used))
 int device_info_main(int argc, char *argv[]) {
   DeviceInfo * di = DeviceInfo.shared;
   NSString *info = [@[

@@ -59,7 +59,7 @@ int _print_history_lines(NSInteger number) {
   
   return 0;
 }
-__attribute__ ((visibility("default")))
+__attribute__ ((visibility("default"), used))
 int history_main(int argc, char *argv[]) {
   NSString *args = @"";
   if (argc == 2) {

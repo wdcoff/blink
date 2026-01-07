@@ -34,7 +34,7 @@
 #include "ios_error.h"
 #include "MCPSession.h"
 
-__attribute__ ((visibility("default")))
+__attribute__ ((visibility("default"), used))
 int clear_main(int argc, char *argv[]) {
 //  return [[(__bridge MCPSession *)thread_context repl] clear_main:argc argv:argv];
   printf("\033c\033[H\033[2J\033[0m");

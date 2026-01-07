@@ -86,7 +86,7 @@ void _sayText(NSString *text, NSNumber* rate, AVSpeechSynthesisVoice *voice) {
   [delegate wait];
 }
 
-__attribute__ ((visibility("default")))
+__attribute__ ((visibility("default"), used))
 int say_main(int argc, char *argv[]) {
   thread_optind = 1;
   

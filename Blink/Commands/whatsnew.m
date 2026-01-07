@@ -34,7 +34,7 @@
 #include "ios_system/ios_system.h"
 #include "ios_error.h"
 
-__attribute__ ((visibility("default")))
+__attribute__ ((visibility("default"), used))
 int whatsnew_main(int argc, char *argv[]) {
   dispatch_async(dispatch_get_main_queue(), ^{
     [[UIApplication sharedApplication]

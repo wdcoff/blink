@@ -33,7 +33,7 @@
 #import "MCPSession.h"
 #include "ios_system/ios_system.h"
 
-__attribute__ ((visibility("default")))
+__attribute__ ((visibility("default"), used))
 int open_main(int argc, char *argv[]) {
   if (argc != 2) {
     NSString *usage = [@[

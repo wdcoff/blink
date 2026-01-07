@@ -74,7 +74,7 @@ void tokio_start_mosh(char * key, char * host, char * port) {
 
 extern int blink_build_cmd(int argc, char *argv[], struct IOSEnv * env, void ** signals);
   
-__attribute__ ((visibility("default")))
+__attribute__ ((visibility("default"), used))
 int build_main(int argc, char *argv[]) {
 #ifdef BLINK_BUILD_ENABLED
   MCPSession *session = (__bridge MCPSession *)thread_context;

@@ -48,7 +48,7 @@ void __print_commands(void) {
   puts(formattedCommands.UTF8String);
 }
 
-__attribute__ ((visibility("default")))
+__attribute__ ((visibility("default"), used))
 int help_main(int argc, char *argv[]) {
   
   if (argc == 2 && [@"list-commands" isEqual: @(argv[1])]) {
